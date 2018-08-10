@@ -3,6 +3,8 @@ package inventory.storage;
 import java.io.Serializable;
 
 public class Product implements Serializable {
+	private static final long serialVersionUID = 1L;
+	
 	private int id, quantity;
 	private String name;
 	private double price;
@@ -33,11 +35,24 @@ public class Product implements Serializable {
 		return this.quantity;
 	}
 	
+	public static int getNumOfProducts() {
+		return numberOfProducts;
+	}
+	
 	public void setQuantity(int newValue) {
-		if (newValue >= 0)
-			this.quantity = newValue;
-		else
-			this.quantity = 0;
+		this.quantity = newValue;
+		
+		return;
+	}
+	
+	public void setID(int newValue) {
+		this.id = newValue;
+		
+		return;
+	}
+	
+	public static void setNumOfProducts(int newValue) {
+		numberOfProducts = newValue;
 		
 		return;
 	}
