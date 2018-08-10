@@ -1,10 +1,11 @@
 package inventory.storage;
 
-public class Product {
-	private int id;
+import java.io.Serializable;
+
+public class Product implements Serializable {
+	private int id, quantity;
 	private String name;
 	private double price;
-	private int quantity;
 	
 	private static int numberOfProducts = 0;
 	
