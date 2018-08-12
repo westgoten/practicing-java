@@ -96,6 +96,7 @@ public class Main {
 			} else {
 				System.out.println("\nInvalid price");
 				invalid = true;
+				waitSeconds(1);
 			}
 		} while (invalid);
 		
@@ -108,6 +109,7 @@ public class Main {
 			} else {
 				System.out.println("\nInvalid quantity");
 				invalid = true;
+				waitSeconds(1);
 			}
 		} while (invalid);
 		
@@ -168,6 +170,7 @@ public class Main {
 			} else {
 				System.out.println("\nInvalid quantity");
 				invalid = true;
+				waitSeconds(1);
 			}
 		} while (invalid);
 		
